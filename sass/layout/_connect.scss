@@ -1,0 +1,47 @@
+.connect-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--link-color);
+  margin-bottom: 20px;
+  margin-left: 93px;
+}
+
+.connect-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.connect-input,
+.connect-text {
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  /* identical to box height, or 125% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+}
+
+.connect-input ::placeholder,
+.connect-text {
+  text-transform: lowercase;
+}
+
+.connect-input {
+  width: 358px;
+  height: 50px;
+  margin-left: 93px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connect-input:focus {
+  border-color: var(--accent-color);
+}
