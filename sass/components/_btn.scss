@@ -28,7 +28,6 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  /* identical to box height, or 187% */
   display: flex;
   align-items: center;
   text-align: center;
@@ -57,7 +56,6 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  /* identical to box height, or 187% */
   display: flex;
   align-items: center;
   text-align: center;
@@ -73,13 +71,19 @@
 
 .features-portfolio-list-btn {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+
+  margin-bottom: 40px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .features-portfolio-item-btn {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .features-portfolio-btn {
@@ -87,7 +91,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  /* identical to box height, or 162% */
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-color);
@@ -103,7 +106,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    /* identical to box height, or 162% */
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--btn-color);
@@ -116,7 +118,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  /* identical to box height, or 162% */
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--link-color);
