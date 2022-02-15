@@ -4,14 +4,20 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--link-color);
   margin-bottom: 20px;
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    text-align: left;
+  }
 }
 
 .connect-form {
-  display: flex;
   justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .connect-input,
@@ -19,7 +25,6 @@
   padding-left: 16px;
   font-size: 16px;
   line-height: 1.25;
-  /* identical to box height, or 125% */
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
@@ -35,11 +40,17 @@
 }
 
 .connect-input {
-  width: 358px;
+  width: 450px;
   height: 50px;
-  margin-left: 93px;
   outline: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-left: 93px;
+  }
 }
 
 .connect-input:focus {
