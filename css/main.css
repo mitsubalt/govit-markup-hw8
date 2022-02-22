@@ -642,12 +642,11 @@ img {
 
 .about {
   padding-bottom: 94px;
-  display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media (max-width: 1199px) {
   .about {
-    display: inline;
+    display: none;
   }
 }
 
