@@ -10,23 +10,22 @@
 
 .header-list,
 .contakts-list {
-  display: flex;
+  display: none;
   justify-content: center;
 }
 
-.header-item:not(:last-child) {
-  margin-right: 50px;
-}
+// .header-item:not(:last-child) {
+//   margin-right: 50px;
+// }
 
-.contakts-list {
-  margin-left: auto;
-}
+// .contakts-list {
+//   margin-left: auto;
+// }
 
 .link-logo {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
   letter-spacing: 0.03em;
   color: #2196f3;
   font-family: Raleway, cursive;
@@ -36,7 +35,6 @@
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
   letter-spacing: 0.03em;
   color: #000000;
   font-family: Raleway, cursive;
@@ -46,78 +44,118 @@
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
   letter-spacing: 0.03em;
   color: #2196f3;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  // padding-top: 24px;
+  // padding-bottom: 25px;
 }
 
-.header-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--first-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-  }
+// .header-link {
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   color: var(--first-color);
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   &:hover,
+//   &:focus {
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     color: var(--accent-color);
+//   }
+// }
+
+// .header-link-current {
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   color: var(--accent-color);
+//   position: relative;
+// }
+
+// .current::after {
+//   content: "";
+//   width: 100%;
+//   height: 5px;
+//   border-radius: 2px;
+//   position: absolute;
+//   background-color: var(--accent-color);
+//   left: 0;
+//   bottom: -32px;
+// }
+
+// .tel-svg {
+//   margin-right: 10px;
+//   align-items: center;
+// }
+
+// .header-contakts-item {
+//   margin-left: 30px;
+// }
+
+// .header-mail,
+// .header-tel {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   color: #757575;
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   &:hover,
+//   &:focus {
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     color: var(--accent-color);
+//     fill: var(--accent-color);
+//   }
+// }
+
+.menu-open-btn {
+  margin-left: auto;
+  border: none;
+  background-color: #ffffff;
 }
 
-.header-link-current {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-  position: relative;
-}
-
-.current::after {
-  content: "";
-  width: 100%;
-  height: 5px;
-  border-radius: 2px;
+.mob-menu {
   position: absolute;
-  background-color: var(--accent-color);
+  background-color: #ffffff;
+  top: 0;
   left: 0;
-  bottom: -32px;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 21px;
+  padding-bottom: 48px;
 }
 
-.tel-svg {
-  margin-right: 10px;
-  align-items: center;
+.menu-close-btn {
+  display: block;
+  margin-left: auto;
+  padding-top: 10px;
+  border: none;
+  background-color: #ffffff;
 }
 
-.header-contakts-item {
-  margin-left: 30px;
-}
-
-.header-mail,
-.header-tel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-    fill: var(--accent-color);
+.mob-menu-list-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
   }
+}
+
+.mob-menu-list-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
 }
